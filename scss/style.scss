@@ -293,6 +293,12 @@ h5,
 }
 
 //OWL CAROUSEL
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y !important;
+  touch-action: pan-y !important;
+}
+
 .owl-carousel {
   position: relative;
   .owl-item {
@@ -441,16 +447,6 @@ h5,
         }
         .slider-text {
           height: 500px;
-        }
-      }
-    }
-    // change size on small screen
-    @include media-breakpoint-down(sm) {
-      height: 400px;
-      .slider-item {
-        height: 400px;
-        slider-text {
-          height: 400px;
         }
       }
     }
